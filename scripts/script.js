@@ -40,10 +40,8 @@ for (const card of arrays) {
       rejectedInterview.appendChild(card);
     }
 
-    // Increase rejected number
     rejectedNumber.innerText = Number(rejectedNumber.innerText) + 1;
 
-    // Decrease total number
     totalNumber.innerText = Number(totalNumber.innerText) - 1;
   });
 }
@@ -64,10 +62,8 @@ document.addEventListener("click", function (e) {
       rejectedNumber.innerText = Number(rejectedNumber.innerText) - 1;
     }
 
-    // Remove card
     card.remove();
 
-    // Update remaining count
     const remainingCards = document.querySelectorAll("[id^='card-']").length;
 
     selectedCardNumber.innerText = remainingCards;
