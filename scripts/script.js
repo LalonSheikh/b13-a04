@@ -49,7 +49,6 @@ for (const card of arrays) {
 }
 //  delete function added
 
-
 document.addEventListener("click", function (e) {
   if (e.target.classList.contains("delete-btn")) {
     const card = e.target.closest("[id^='card-']");
