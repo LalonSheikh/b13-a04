@@ -10,5 +10,5 @@ Append to the DOM with appendChild
    4. What is Event Delegation in JavaScript? Why is it useful?
 Answer: Event Delegation is called that listen on a parent, act on the child that triggered the event using event.target and  Works because of event bubbling.
 5. What is the difference between preventDefault() and stopPropagation() methods?
-6. Answer: preventDefault() is preventing a form from submitting, preventing a link <a> from navigating and stopping right-click context menu. on the otherhand
-7.  stopPropagation() is a JavaScript method that stops an event from bubbling up  the DOM tree.
+   Answer: preventDefault() is preventing a form from submitting, preventing a link <a> from navigating and stopping right-click context menu. on the otherhand
+    stopPropagation() is a JavaScript method that stops an event from bubbling up  the DOM tree.
