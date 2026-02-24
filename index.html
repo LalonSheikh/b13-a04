@@ -24,24 +24,24 @@
         
           <div class=" bg-white   text-xl font-bold w-96 flex flex-col text-left p-3">
             <h3 class="text-gray-600">Total</h3>
-            <p class="text-blue-950">8</p>
+            <p class="text-blue-950"><span id="total-job">8</span></p>
           </div>
           <div class=" bg-white  text-xl font-bold w-96 flex flex-col text-left p-3">
             <h3 class="text-gray-600">Interview</h3>
-            <p><span class="text-green-600">0</span></p>
+            <p><span id="interview-number" class="text-green-600">0</span></p>
           </div>
           <div class=" bg-white  text-xl font-bold w-96 flex flex-col text-left p-3">
             <h3 class="text-gray-600">Rejected</h3>
-            <p><span class="text-red-500">0</span></p>
+            <p><span id="rejected-number" class="text-red-500">0</span></p>
           </div>
           
           
       </div>
     </header>
     <main class="max-w-6xl">
-        <div class="flex justify-between font-bold p-1 text-gray-700">
+        <div class="flex justify-between font-bold p-1 text-sm text-gray-700">
             <h2>Available Jobs</h2>
-            <p>8 jobs</p>
+            <p><span id="selected-card-number" class="text-neutral-500">0</span> of 8 jobs</p>
         </div>
         <section>
 
@@ -50,171 +50,147 @@
   <div class="tab-content bg-base-100 border-base-300 p-6">
     <div>
 
- <div class="space-y-6">
+ <div id="card-container" class="space-y-6">
 
-  <!-- Card 1 -->
-  <div class="bg-base-200 p-2 rounded-lg flex justify-between">
+ <!-- Card 1 -->
+  <div id="card-1" class="bg-base-200 p-2 rounded-lg flex justify-between">
     <div>
       <h2 class="text-xl text-blue-400 font-bold">Mobile First Corp</h2>
       <p class="text-gray-500">React Native Developer</p>
       <p class="text-sm text-gray-400 mb-2 mt-1">Remote • Full-time • $90000 - $120000</p>
-
-      <span class="bg-blue-100 p-2 font-bold text-blue-900 rounded-xl">NOT APPLIED</span>
-
+      <span id="applied-rejected-1" class="bg-blue-100 p-2 font-bold text-blue-900 rounded-xl">NOT APPLIED</span>
       <p class="mt-3 text-gray-600">
         Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.
       </p>
-
       <div class="mt-4 space-x-3">
-        <button id="interview-btn" class="btn btn-outline btn-success">INTERVIEW</button>
-        <button id="rejected-btn" class="btn btn-outline btn-error">REJECTED</button>
+        <button id="interview-btn" class="interview-btn btn btn-outline btn-success">INTERVIEW</button>
+        <button id="rejected-btn" class="rejected-btn btn btn-outline btn-error">REJECTED</button>
       </div>
     </div>
     <p><i class="fa-solid fa-trash-can text-red-500 rounded-full bg-gray-200 p-1"></i></p>
   </div>
 
   <!-- Card 2 -->
-  <div class="bg-base-200 p-2 rounded-lg flex justify-between">
+  <div id="card-2" class="bg-base-200 p-2 rounded-lg flex justify-between">
     <div>
       <h2 class="text-xl text-blue-400 font-bold">WebFlow Agency</h2>
       <p class="text-gray-500">Web Designer & Developer</p>
       <p class="text-sm text-gray-400 mb-2 mt-1">Los Angeles, CA • Part-time • $80000 - $120000</p>
-
-      <span class="bg-blue-100 p-2 font-bold text-blue-900 rounded-xl">NOT APPLIED</span>
-
+      <span id="applied-rejected-2" class="bg-blue-100 p-2 font-bold text-blue-900 rounded-xl">NOT APPLIED</span>
       <p class="mt-3 text-gray-600">
         Create stunning web experiences for high-profile clients using modern design trends.
       </p>
-
       <div class="mt-4 space-x-3">
-        <button class="btn btn-outline btn-success">INTERVIEW</button>
-        <button class="btn btn-outline btn-error">REJECTED</button>
+        <button id="interview-btn" class="interview-btn btn btn-outline btn-success">INTERVIEW</button>
+        <button class="rejected-btn btn btn-outline btn-error">REJECTED</button>
       </div>
     </div>
     <p><i class="fa-solid fa-trash-can text-red-500 rounded-full bg-gray-200 p-1"></i></p>
   </div>
 
   <!-- Card 3 -->
-  <div class="bg-base-200 p-2 rounded-lg flex justify-between">
+  <div id="card-3" class="bg-base-200 p-2 rounded-lg flex justify-between">
     <div>
       <h2 class="text-xl text-blue-400 font-bold">DataViz Solutions</h2>
       <p class="text-gray-500">Data Visualization Specialist</p>
       <p class="text-sm text-gray-400 mb-2 mt-1">Boston, MA • Full-time • $125000 - $165000</p>
-
-      <span class="bg-blue-100 p-2 font-bold text-blue-900 rounded-xl">NOT APPLIED</span>
-
+      <span id="applied-rejected-3" class="bg-blue-100 p-2 font-bold text-blue-900 rounded-xl">NOT APPLIED</span>
       <p class="mt-3 text-gray-600">
         Transform complex datasets into compelling dashboards using D3.js and React.
       </p>
-
       <div class="mt-4 space-x-3">
-        <button class="btn btn-outline btn-success">INTERVIEW</button>
-        <button class="btn btn-outline btn-error">REJECTED</button>
+        <button id="interview-btn" class="interview-btn btn btn-outline btn-success">INTERVIEW</button>
+        <button id="rejected-btn" class="rejected-btn btn btn-outline btn-error">REJECTED</button>
       </div>
     </div>
     <p><i class="fa-solid fa-trash-can text-red-500 rounded-full bg-gray-200 p-1"></i></p>
   </div>
 
   <!-- Card 4 -->
-  <div class="bg-base-200 p-2 rounded-lg flex justify-between">
+  <div id="card-4" class="bg-base-200 p-2 rounded-lg flex justify-between">
     <div>
       <h2 class="text-xl text-blue-400 font-bold">CloudFirst Inc</h2>
       <p class="text-gray-500">Backend Developer</p>
       <p class="text-sm text-gray-400 mb-2 mt-1">Seattle, WA • Full-time • $140000 - $190000</p>
-
-      <span class="bg-blue-100 p-2 font-bold text-blue-900 rounded-xl">NOT APPLIED</span>
-
+      <span id="applied-rejected-4" class="bg-blue-100 p-2 font-bold text-blue-900 rounded-xl">NOT APPLIED</span>
       <p class="mt-3 text-gray-600">
         Design and maintain scalable backend systems using Python and AWS infrastructure.
       </p>
-
       <div class="mt-4 space-x-3">
-        <button class="btn btn-outline btn-success">INTERVIEW</button>
-        <button class="btn btn-outline btn-error">REJECTED</button>
+        <button id="interview-btn" class="interview-btn btn btn-outline btn-success">INTERVIEW</button>
+        <button id="rejected-btn" class="rejected-btn btn btn-outline btn-error">REJECTED</button>
       </div>
     </div>
     <p><i class="fa-solid fa-trash-can text-red-500 rounded-full bg-gray-200 p-1"></i></p>
   </div>
 
   <!-- Card 5 -->
-  <div class="bg-base-200 p-2 rounded-lg flex justify-between">
+  <div id="card-5" class="bg-base-200 p-2 rounded-lg flex justify-between">
     <div>
       <h2 class="text-xl text-blue-400 font-bold">NextGen Apps</h2>
       <p class="text-gray-500">Flutter Developer</p>
       <p class="text-sm text-gray-400 mb-2 mt-1">Berlin • Full-time • $95000 - $130000</p>
-
-      <span class="bg-blue-100 p-2 font-bold text-blue-900 rounded-xl">NOT APPLIED</span>
-
+      <span id="applied-rejected-5" class="bg-blue-100 p-2 font-bold text-blue-900 rounded-xl">NOT APPLIED</span>
       <p class="mt-3 text-gray-600">
         Develop high-performance mobile apps using Flutter and Firebase technologies.
       </p>
-
       <div class="mt-4 space-x-3">
-        <button class="btn btn-outline btn-success">INTERVIEW</button>
-        <button class="btn btn-outline btn-error">REJECTED</button>
+        <button id="interview-btn" class="interview-btn btn btn-outline btn-success">INTERVIEW</button>
+        <button id="rejected-btn" class="rejected-btn btn btn-outline btn-error">REJECTED</button>
       </div>
     </div>
     <p><i class="fa-solid fa-trash-can text-red-500 rounded-full bg-gray-200 p-1"></i></p>
   </div>
 
   <!-- Card 6 -->
-  <div class="bg-base-200 p-2 rounded-lg flex justify-between">
+  <div id="card-6" class="bg-base-200 p-2 rounded-lg flex justify-between">
     <div>
       <h2 class="text-xl text-blue-400 font-bold">CyberSecure Pro</h2>
       <p class="text-gray-500">Security Engineer</p>
       <p class="text-sm text-gray-400 mb-2 mt-1">San Francisco • Full-time • $130000 - $170000</p>
-
-      <span class="bg-blue-100 p-2 font-bold text-blue-900 rounded-xl">NOT APPLIED</span>
-
+      <span id="applied-rejected-6" class="bg-blue-100 p-2 font-bold text-blue-900 rounded-xl">NOT APPLIED</span>
       <p class="mt-3 text-gray-600">
         Perform vulnerability testing and strengthen application security systems.
       </p>
-
       <div class="mt-4 space-x-3">
-        <button class="btn btn-outline btn-success">INTERVIEW</button>
-        <button class="btn btn-outline btn-error">REJECTED</button>
+        <button id="interview-btn" class="interview-btn btn btn-outline btn-success">INTERVIEW</button>
+        <button id="rejected-btn" class="rejected-btn btn btn-outline btn-error">REJECTED</button>
       </div>
     </div>
     <p><i class="fa-solid fa-trash-can text-red-500 rounded-full bg-gray-200 p-1"></i></p>
   </div>
 
   <!-- Card 7 -->
-  <div class="bg-base-200 p-2 rounded-lg flex justify-between">
+  <div id="card-7" class="bg-base-200 p-2 rounded-lg flex justify-between">
     <div>
       <h2 class="text-xl text-blue-400 font-bold">BrightData Analytics</h2>
       <p class="text-gray-500">Data Analyst</p>
       <p class="text-sm text-gray-400 mb-2 mt-1">Toronto • Full-time • $85000 - $110000</p>
-
-      <span class="bg-blue-100 p-2 font-bold text-blue-900 rounded-xl">NOT APPLIED</span>
-
+      <span id="applied-rejected-7" class="bg-blue-100 p-2 font-bold text-blue-900 rounded-xl">NOT APPLIED</span>
       <p class="mt-3 text-gray-600">
         Analyze business data and generate insights using SQL and Power BI dashboards.
       </p>
-
       <div class="mt-4 space-x-3">
-        <button class="btn btn-outline btn-success">INTERVIEW</button>
-        <button class="btn btn-outline btn-error">REJECTED</button>
+        <button id="interview-btn" class="interview-btn btn btn-outline btn-success">INTERVIEW</button>
+        <button id="rejected-btn" class="rejected-btn btn btn-outline btn-error">REJECTED</button>
       </div>
     </div>
     <p><i class="fa-solid fa-trash-can text-red-500 rounded-full bg-gray-200 p-1"></i></p>
   </div>
 
   <!-- Card 8 -->
-  <div class="bg-base-200 p-2 rounded-lg flex justify-between">
+  <div id="card-8" class="bg-base-200 p-2 rounded-lg flex justify-between">
     <div>
       <h2 class="text-xl text-blue-400 font-bold">AI Future Labs</h2>
       <p class="text-gray-500">Machine Learning Engineer</p>
       <p class="text-sm text-gray-400 mb-2 mt-1">Singapore • Full-time • $125000 - $180000</p>
-
-      <span class="bg-blue-100 p-2 font-bold text-blue-900 rounded-xl">NOT APPLIED</span>
-
+      <span id="applied-rejected-8" class="bg-blue-100 p-2 font-bold text-blue-900 rounded-xl">NOT APPLIED</span>
       <p class="mt-3 text-gray-600">
         Develop and deploy scalable AI models for real-world enterprise solutions.
       </p>
-
       <div class="mt-4 space-x-3">
-        <button class="btn btn-outline btn-success">INTERVIEW</button>
-        <button class="btn btn-outline btn-error">REJECTED</button>
+        <button id="interview-btn" class="interview-btn btn btn-outline btn-success">INTERVIEW</button>
+        <button id="rejected-btn" class="rejected-btn btn btn-outline btn-error">REJECTED</button>
       </div>
     </div>
     <p><i class="fa-solid fa-trash-can text-red-500 rounded-full bg-gray-200 p-1"></i></p>
@@ -229,8 +205,9 @@
 
   <input type="radio" name="my_tabs_3" class="tab" aria-label="Interview"  />
   <div class="tab-content bg-base-100 border-base-300 p-20">
-    <section class="flex justify-center items-center">
-        <div>
+    <section id="selected-interview"></section>
+    <section id="no-available-card" class="flex justify-center items-center">
+        <div >
             <img src="images/jobs.png" alt="">
         <h6 class="font-bold">No jobs available</h6>
         <p>Check back soon for new job opportunities</p>
@@ -241,7 +218,7 @@
   <input type="radio" name="my_tabs_3" class="tab" aria-label="Rejected" />
   <div class="tab-content bg-base-100 border-base-300 p-20"><section class="flex justify-center items-center">
         <div>
-            <img src="images/jobs.png" alt="">
+            <img class="py-2" src="images/jobs.png" alt="">
         <h6 class="font-bold">No jobs available</h6>
         <p>Check back soon for new job opportunities</p>
         </div>
