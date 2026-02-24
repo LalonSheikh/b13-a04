@@ -46,8 +46,8 @@
         <section>
 
 <div class="tabs tabs-lift ">
-  <input type="radio" name="my_tabs_3" class="tab hover:bg-primary hover:text-white  w-20"  aria-label="All" checked="checked" />
-  <div class="tab-content bg-base-100 border-base-300 p-6">
+  <input  type="radio" name="my_tabs_3" class="tab hover:bg-primary hover:text-white  w-20"  aria-label="All" checked="checked" />
+  <div class="tab-content bg-base-100 border-base-300 p-6" id="applied-tap">
     <div>
 
  <div id="card-container" class="space-y-6">
@@ -67,7 +67,7 @@
         <button id="rejected-btn" class="rejected-btn btn btn-outline btn-error">REJECTED</button>
       </div>
     </div>
-    <p><i class="fa-solid fa-trash-can text-red-500 rounded-full bg-gray-200 p-1"></i></p>
+    <p><i  class="fa-solid delete-btn fa-trash-can text-red-500 rounded-full bg-gray-200 p-1"></i></p>
   </div>
 
   <!-- Card 2 -->
@@ -85,7 +85,7 @@
         <button class="rejected-btn btn btn-outline btn-error">REJECTED</button>
       </div>
     </div>
-    <p><i class="fa-solid fa-trash-can text-red-500 rounded-full bg-gray-200 p-1"></i></p>
+    <p><i class="fa-solid fa-trash-can delete-btn text-red-500 rounded-full bg-gray-200 p-1"></i></p>
   </div>
 
   <!-- Card 3 -->
@@ -103,7 +103,7 @@
         <button id="rejected-btn" class="rejected-btn btn btn-outline btn-error">REJECTED</button>
       </div>
     </div>
-    <p><i class="fa-solid fa-trash-can text-red-500 rounded-full bg-gray-200 p-1"></i></p>
+    <p><i class="fa-solid fa-trash-can delete-btn text-red-500 rounded-full bg-gray-200 p-1"></i></p>
   </div>
 
   <!-- Card 4 -->
@@ -121,7 +121,7 @@
         <button id="rejected-btn" class="rejected-btn btn btn-outline btn-error">REJECTED</button>
       </div>
     </div>
-    <p><i class="fa-solid fa-trash-can text-red-500 rounded-full bg-gray-200 p-1"></i></p>
+    <p><i class="fa-solid delete-btn fa-trash-can text-red-500 rounded-full bg-gray-200 p-1"></i></p>
   </div>
 
   <!-- Card 5 -->
@@ -139,7 +139,7 @@
         <button id="rejected-btn" class="rejected-btn btn btn-outline btn-error">REJECTED</button>
       </div>
     </div>
-    <p><i class="fa-solid fa-trash-can text-red-500 rounded-full bg-gray-200 p-1"></i></p>
+    <p><i class="fa-solid delete-btn fa-trash-can text-red-500 rounded-full bg-gray-200 p-1"></i></p>
   </div>
 
   <!-- Card 6 -->
@@ -157,7 +157,7 @@
         <button id="rejected-btn" class="rejected-btn btn btn-outline btn-error">REJECTED</button>
       </div>
     </div>
-    <p><i class="fa-solid fa-trash-can text-red-500 rounded-full bg-gray-200 p-1"></i></p>
+    <p><i class="fa-solid fa-trash-can delete-btn text-red-500 rounded-full bg-gray-200 p-1"></i></p>
   </div>
 
   <!-- Card 7 -->
@@ -175,7 +175,7 @@
         <button id="rejected-btn" class="rejected-btn btn btn-outline btn-error">REJECTED</button>
       </div>
     </div>
-    <p><i class="fa-solid fa-trash-can text-red-500 rounded-full bg-gray-200 p-1"></i></p>
+    <p><i class="fa-solid fa-trash-can delete-btn text-red-500 rounded-full bg-gray-200 p-1"></i></p>
   </div>
 
   <!-- Card 8 -->
@@ -193,7 +193,7 @@
         <button id="rejected-btn" class="rejected-btn btn btn-outline btn-error">REJECTED</button>
       </div>
     </div>
-    <p><i class="fa-solid fa-trash-can text-red-500 rounded-full bg-gray-200 p-1"></i></p>
+    <p><i class="fa-solid fa-trash-can text-red-500 rounded-full delete-btn bg-gray-200 p-1"></i></p>
   </div>
 
 
@@ -204,7 +204,7 @@
   </div>
 
   <input type="radio" name="my_tabs_3" class="tab" aria-label="Interview"  />
-  <div class="tab-content bg-base-100 border-base-300 p-20">
+  <div class="tab-content bg-base-100 border-base-300 p-20" id="interview-tab">
     <section id="selected-interview"></section>
     <section id="no-available-card" class="flex justify-center items-center">
         <div >
@@ -216,7 +216,7 @@
   </div>
 
   <input type="radio" name="my_tabs_3" class="tab" aria-label="Rejected" />
-  <div class="tab-content bg-base-100 border-base-300 p-20">
+  <div class="tab-content bg-base-100 border-base-300 p-20" id='rejected-tab'>
     <section id="rejected-interview"></section>
     <section class="flex justify-center items-center">
         <div>
