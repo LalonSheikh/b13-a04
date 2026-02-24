@@ -48,27 +48,15 @@ for (const card of arrays) {
   });
 }
 //  delete function added
-// const totalNumber = document.getElementById("total-job");
-// const interviewNumber = document.getElementById("interview-number");
-// const rejectedNumber = document.getElementById("rejected-number");
-// const selectedCardNumber = document.getElementById("selected-card-number");
 
-// const cardsContainer = document.getElementById("card-container");
 
-function updateSelectedCount() {
-  const remaining = cardsContainer.children.length;
-  selectedCardNumber.innerText = remaining;
-}
-
-const allCards = document.querySelectorAll(".delete-btn");
-
-for (let i = 0; i < allCards.length; i++) {
-  allCards[i].addEventListener("click", function () {
-    const card = this.closest("div[id^='card-']");
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("delete-btn")) {
+    const card = e.target.closest("[id^='card-']");
     const statusSpan = card.querySelector("span");
-    const status = statusSpan.innerText;
+    const status = statusSpan.innerText.trim();
 
-    // Adjust dashboard count based on status
+    // Decrease correct dashboard count
     if (status === "NOT APPLIED") {
       totalNumber.innerText = Number(totalNumber.innerText) - 1;
     }
@@ -84,7 +72,9 @@ for (let i = 0; i < allCards.length; i++) {
     // Remove card
     card.remove();
 
-    // Update remaining jobs counter
-    updateSelectedCount();
-  });
-}
+    // Update remaining count
+    const remainingCards = document.querySelectorAll("[id^='card-']").length;
+
+    selectedCardNumber.innerText = remainingCards;
+  }
+});
