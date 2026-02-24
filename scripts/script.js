@@ -58,13 +58,9 @@ document.addEventListener("click", function (e) {
     // Decrease correct dashboard count
     if (status === "NOT APPLIED") {
       totalNumber.innerText = Number(totalNumber.innerText) - 1;
-    }
-
-    if (status === "INTERVIEW") {
+    } else if (status === "INTERVIEW") {
       interviewNumber.innerText = Number(interviewNumber.innerText) - 1;
-    }
-
-    if (status === "REJECTED") {
+    } else if (status === "REJECTED") {
       rejectedNumber.innerText = Number(rejectedNumber.innerText) - 1;
     }
 
